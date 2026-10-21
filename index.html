@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#14213d" />
 <meta name="color-scheme" content="light" />
-<meta name="description" content="A white-labelled placement enablement partnership proposal from IICP, including the Audio Interview Champ, live lectures, placement alerts, internship projects and a branded student portal." />
+<meta name="description" content="A white-labelled placement enablement partnership proposal from IICP, including 500+ Technical Q&As, the Audio Interview Champ, live lectures, placement alerts, internship projects and a branded student portal." />
 <title>Partnership Proposal — IICP × Computer Institute</title>
 <style>
 /* =====================================================================
@@ -350,16 +350,8 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
   letter-spacing: .09em;
   text-transform: uppercase;
 }
-.featured-content {
-  display: grid;
-  gap: 22px;
-}
-.featured-top {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
-  gap: 32px;
-  align-items: center;
-}
+.featured-content { display: grid; gap: 22px; }
+.featured-top { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr); gap: 32px; align-items: center; }
 .featured-main { display: flex; align-items: flex-start; gap: 20px; min-width: 0; }
 .card-icon-lg {
   display: grid;
@@ -371,20 +363,10 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
   border: 1px solid rgba(255,255,255,.2);
   border-radius: 19px;
   background: linear-gradient(145deg, #1a3475, #355fc0);
-  box-shadow:
-    0 12px 26px rgba(36,71,168,.24),
-    inset 0 1px 0 rgba(255,255,255,.24),
-    inset 0 -2px 6px rgba(0,0,0,.18);
+  box-shadow: 0 12px 26px rgba(36,71,168,.24), inset 0 1px 0 rgba(255,255,255,.24), inset 0 -2px 6px rgba(0,0,0,.18);
   position: relative;
 }
-.card-icon-lg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 19px;
-  background: linear-gradient(140deg, rgba(255,255,255,.22), transparent 50%);
-  pointer-events: none;
-}
+.card-icon-lg::after { content: ""; position: absolute; inset: 0; border-radius: 19px; background: linear-gradient(140deg, rgba(255,255,255,.22), transparent 50%); pointer-events: none; }
 .card-icon-lg svg { width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; position: relative; z-index: 1; }
 .eyebrow-small { display: inline-block; margin-bottom: 5px; color: #a37b2b; font-size: 9px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
 .featured-main h3 { margin: 0 0 9px; color: #172542; font-size: clamp(20px, 2.2vw, 25px); font-weight: 850; line-height: 1.24; letter-spacing: -.038em; }
@@ -397,121 +379,25 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
   border: 1px solid rgba(36,71,168,.13);
   border-radius: 16px;
   background: linear-gradient(160deg, #ffffff, #f8faff);
-  box-shadow:
-    0 24px 55px -18px rgba(7,17,42,.28),
-    0 12px 26px -12px rgba(7,17,42,.18),
-    0 0 0 1px rgba(255,255,255,.6) inset;
+  box-shadow: 0 24px 55px -18px rgba(7,17,42,.28), 0 12px 26px -12px rgba(7,17,42,.18), 0 0 0 1px rgba(255,255,255,.6) inset;
   overflow: hidden;
 }
-.preview-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 9px 14px;
-  border-bottom: 1px solid rgba(36,71,168,.09);
-  background: linear-gradient(180deg, #fbfcff, #f4f7fe);
-}
+.preview-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 14px; border-bottom: 1px solid rgba(36,71,168,.09); background: linear-gradient(180deg, #fbfcff, #f4f7fe); }
 .preview-dot-row { display: inline-flex; gap: 5px; }
 .preview-dot-row i { width: 8px; height: 8px; border-radius: 50%; background: #d9e2f2; }
 .preview-dot-row i:nth-child(1) { background: #f4c4b8; }
 .preview-dot-row i:nth-child(2) { background: #f3dfa8; }
 .preview-dot-row i:nth-child(3) { background: #b9e4c9; }
-.preview-tab {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 3px 10px;
-  color: #8595b8;
-  background: #fff;
-  border: 1px solid #e4eaf6;
-  border-radius: 6px;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: .02em;
-}
-.preview-live {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  color: #a4340e;
-  background: rgba(255,80,40,.09);
-  border: 1px solid rgba(255,80,40,.2);
-  border-radius: 999px;
-  padding: 2px 8px;
-  font-size: 8px;
-  font-weight: 850;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-.preview-live::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #ff5030;
-  animation: pulseGlow 1.8s ease-in-out infinite;
-}
+.preview-tab { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; color: #8595b8; background: #fff; border: 1px solid #e4eaf6; border-radius: 6px; font-size: 9px; font-weight: 700; letter-spacing: .02em; }
+.preview-live { display: inline-flex; align-items: center; gap: 4px; color: #a4340e; background: rgba(255,80,40,.09); border: 1px solid rgba(255,80,40,.2); border-radius: 999px; padding: 2px 8px; font-size: 8px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.preview-live::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: #ff5030; animation: pulseGlow 1.8s ease-in-out infinite; }
 .preview-content { padding: 16px 18px 18px; }
-.preview-label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 7px;
-  color: #8b97b0;
-  font-size: 8px;
-  font-weight: 850;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-.preview-q {
-  color: #172542;
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.4;
-  letter-spacing: -.015em;
-  margin-bottom: 12px;
-}
-.preview-answer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 11px;
-  border: 1px solid #e4eaf6;
-  border-radius: 10px;
-  background: #fff;
-  margin-bottom: 14px;
-}
-.preview-mic {
-  flex: 0 0 22px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  background: linear-gradient(145deg, #355fc0, #1a3475);
-  font-size: 10px;
-  box-shadow: 0 4px 10px rgba(36,71,168,.24);
-}
-.preview-wave {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  flex: 1;
-  height: 20px;
-}
-.preview-wave span {
-  display: block;
-  width: 2px;
-  height: 100%;
-  border-radius: 2px;
-  background: linear-gradient(180deg, #355fc0, #6d8ddc);
-  transform-origin: center;
-  transform: scaleY(.4);
-  animation: waveBar 1.1s ease-in-out infinite;
-}
+.preview-label { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 7px; color: #8b97b0; font-size: 8px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+.preview-q { color: #172542; font-size: 13px; font-weight: 800; line-height: 1.4; letter-spacing: -.015em; margin-bottom: 12px; }
+.preview-answer { display: flex; align-items: center; gap: 10px; padding: 9px 11px; border: 1px solid #e4eaf6; border-radius: 10px; background: #fff; margin-bottom: 14px; }
+.preview-mic { flex: 0 0 22px; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; color: #fff; background: linear-gradient(145deg, #355fc0, #1a3475); font-size: 10px; box-shadow: 0 4px 10px rgba(36,71,168,.24); }
+.preview-wave { display: flex; align-items: center; gap: 2px; flex: 1; height: 20px; }
+.preview-wave span { display: block; width: 2px; height: 100%; border-radius: 2px; background: linear-gradient(180deg, #355fc0, #6d8ddc); transform-origin: center; transform: scaleY(.4); animation: waveBar 1.1s ease-in-out infinite; }
 .preview-wave span:nth-child(1) { animation-delay: 0s; }
 .preview-wave span:nth-child(2) { animation-delay: .09s; }
 .preview-wave span:nth-child(3) { animation-delay: .18s; }
@@ -524,140 +410,35 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
 .preview-wave span:nth-child(10) { animation-delay: .09s; }
 .preview-wave span:nth-child(11) { animation-delay: .22s; }
 .preview-wave span:nth-child(12) { animation-delay: .13s; }
-.preview-time {
-  flex: 0 0 auto;
-  color: #6b7a95;
-  font-size: 10px;
-  font-weight: 750;
-  font-variant-numeric: tabular-nums;
-}
-.preview-score {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 11px 12px;
-  border-radius: 11px;
-  background: linear-gradient(135deg, #0f1a35, #1b2d5c);
-  color: #fff;
-  box-shadow: 0 8px 20px -8px rgba(15,26,53,.5);
-}
-.preview-ring {
-  position: relative;
-  flex: 0 0 46px;
-  width: 46px;
-  height: 46px;
-}
-.preview-ring svg {
-  width: 46px;
-  height: 46px;
-  transform: rotate(-90deg);
-}
+.preview-time { flex: 0 0 auto; color: #6b7a95; font-size: 10px; font-weight: 750; font-variant-numeric: tabular-nums; }
+.preview-score { display: flex; align-items: center; gap: 14px; padding: 11px 12px; border-radius: 11px; background: linear-gradient(135deg, #0f1a35, #1b2d5c); color: #fff; box-shadow: 0 8px 20px -8px rgba(15,26,53,.5); }
+.preview-ring { position: relative; flex: 0 0 46px; width: 46px; height: 46px; }
+.preview-ring svg { width: 46px; height: 46px; transform: rotate(-90deg); }
 .preview-ring circle { fill: none; stroke-linecap: round; }
 .preview-ring .bg { stroke: rgba(255,255,255,.12); stroke-width: 3; }
 .preview-ring .fg { stroke: #d6ad5f; stroke-width: 3; stroke-dasharray: 78 100; }
-.preview-ring span {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 850;
-  letter-spacing: -.02em;
-}
+.preview-ring span { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 850; letter-spacing: -.02em; }
 .preview-dims { flex: 1; display: grid; gap: 5px; }
-.preview-dim {
-  display: grid;
-  grid-template-columns: 60px 1fr 26px;
-  align-items: center;
-  gap: 6px;
-  font-size: 9px;
-  color: #b7c4dd;
-  font-weight: 650;
-}
-.preview-dim .bar {
-  height: 4px;
-  border-radius: 3px;
-  background: rgba(255,255,255,.1);
-  overflow: hidden;
-}
-.preview-dim .bar i {
-  display: block;
-  height: 100%;
-  border-radius: 3px;
-  background: linear-gradient(90deg, #6d8ddc, #f0cb7b);
-}
+.preview-dim { display: grid; grid-template-columns: 60px 1fr 26px; align-items: center; gap: 6px; font-size: 9px; color: #b7c4dd; font-weight: 650; }
+.preview-dim .bar { height: 4px; border-radius: 3px; background: rgba(255,255,255,.1); overflow: hidden; }
+.preview-dim .bar i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, #6d8ddc, #f0cb7b); }
 .preview-dim b { color: #fff; font-weight: 800; text-align: right; font-variant-numeric: tabular-nums; }
 
-.featured-bullets {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 10px 22px;
-  margin: 0;
-  padding: 18px 21px;
-  border: 1px solid rgba(228,180,84,.27);
-  border-radius: 15px;
-  background: rgba(228,180,84,.065);
-  list-style: none;
-}
+.featured-bullets { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px 22px; margin: 0; padding: 18px 21px; border: 1px solid rgba(228,180,84,.27); border-radius: 15px; background: rgba(228,180,84,.065); list-style: none; }
 .featured-bullets li { position: relative; padding-left: 24px; color: #3c4a62; font-size: 12px; line-height: 1.65; }
 .featured-bullets li::before { content: "✓"; position: absolute; top: 0; left: 1px; color: #9b762c; font-size: 13px; font-weight: 900; }
 .featured-tag { display: inline-flex; align-items: center; align-self: flex-start; gap: 6px; margin-top: 1px; padding: 7px 12px; color: #176f5c; border: 1px solid #d9eee7; border-radius: 999px; background: #eef8f4; font-size: 9px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 
 /* Service Cards */
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 17px; }
-.card {
-  position: relative;
-  overflow: hidden;
-  min-width: 0;
-  min-height: 100%;
-  padding: 25px 24px 23px;
-  border: 1px solid #e2e8f1;
-  border-radius: 17px;
-  background: #fff;
-  box-shadow: 0 3px 8px rgba(19,37,77,.02), 0 9px 24px rgba(19,37,77,.025);
-  transition: transform .26s ease, border-color .26s ease, box-shadow .26s ease;
-}
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 3px; height: 100%;
-  background: linear-gradient(180deg, var(--gold), #4267be);
-  opacity: 0;
-  transition: opacity .22s ease;
-  z-index: 2;
-}
-.card:hover {
-  transform: translateY(-5px);
-  border-color: #cdd9ec;
-  box-shadow:
-    0 12px 28px rgba(19,37,77,.08),
-    0 30px 60px -20px rgba(19,37,77,.1);
-}
+.card { position: relative; overflow: hidden; min-width: 0; min-height: 100%; padding: 25px 24px 23px; border: 1px solid #e2e8f1; border-radius: 17px; background: #fff; box-shadow: 0 3px 8px rgba(19,37,77,.02), 0 9px 24px rgba(19,37,77,.025); transition: transform .26s ease, border-color .26s ease, box-shadow .26s ease; }
+.card::before { content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(180deg, var(--gold), #4267be); opacity: 0; transition: opacity .22s ease; z-index: 2; }
+.card:hover { transform: translateY(-5px); border-color: #cdd9ec; box-shadow: 0 12px 28px rgba(19,37,77,.08), 0 30px 60px -20px rgba(19,37,77,.1); }
 .card:hover::before { opacity: 1; }
 .card-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; padding-right: 20px; position: relative; z-index: 2; }
-.card-icon {
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  width: 43px;
-  height: 43px;
-  color: #2a4da5;
-  border: 1px solid #dbe4f5;
-  border-radius: 13px;
-  background: linear-gradient(145deg, #f5f7ff, #e7edfc);
-  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 2px rgba(36,71,168,.06);
-  transition: color .25s ease, background .25s ease, transform .25s ease, box-shadow .25s ease;
-}
+.card-icon { display: grid; place-items: center; flex: 0 0 auto; width: 43px; height: 43px; color: #2a4da5; border: 1px solid #dbe4f5; border-radius: 13px; background: linear-gradient(145deg, #f5f7ff, #e7edfc); box-shadow: inset 0 1px 0 #fff, inset 0 -1px 2px rgba(36,71,168,.06); transition: color .25s ease, background .25s ease, transform .25s ease, box-shadow .25s ease; }
 .card-icon svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s ease; }
-.card:hover .card-icon {
-  color: #fff;
-  border-color: #294da8;
-  background: linear-gradient(145deg, #3159bb, #1d397f);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 18px -4px rgba(36,71,168,.35), inset 0 1px 0 rgba(255,255,255,.2);
-}
+.card:hover .card-icon { color: #fff; border-color: #294da8; background: linear-gradient(145deg, #3159bb, #1d397f); transform: translateY(-1px); box-shadow: 0 8px 18px -4px rgba(36,71,168,.35), inset 0 1px 0 rgba(255,255,255,.2); }
 .card:hover .card-icon svg { transform: scale(1.06); }
 .card-index { position: absolute; top: 17px; right: 19px; color: #c4cddd; font-size: 9px; font-weight: 850; letter-spacing: .12em; transition: color .2s ease; z-index: 2; }
 .card:hover .card-index { color: #b28a3c; }
@@ -672,23 +453,7 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
 .pricing { position: relative; overflow: hidden; border-top: 1px solid #e2e7f1; border-bottom: 1px solid #e2e7f1; background: linear-gradient(180deg, #eef2f9 0%, #f7f9fc 100%); }
 .pricing::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--brand-deep), var(--gold) 50%, var(--brand-deep)); }
 .pricing .section-head { position: relative; }
-.price-box {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(230px, .78fr) minmax(0, 1.25fr);
-  align-items: center;
-  gap: clamp(26px, 4vw, 48px);
-  overflow: hidden;
-  padding: 40px;
-  color: #fff;
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: 24px;
-  background:
-    radial-gradient(ellipse at 4% 0%, rgba(228,180,84,.16), transparent 23rem),
-    radial-gradient(ellipse at 95% 100%, rgba(79,117,209,.16), transparent 25rem),
-    linear-gradient(123deg, #0f1a35 0%, #172e60 62%, #203f81 100%);
-  box-shadow: var(--shadow-deep);
-}
+.price-box { position: relative; display: grid; grid-template-columns: minmax(230px, .78fr) minmax(0, 1.25fr); align-items: center; gap: clamp(26px, 4vw, 48px); overflow: hidden; padding: 40px; color: #fff; border: 1px solid rgba(255,255,255,.1); border-radius: 24px; background: radial-gradient(ellipse at 4% 0%, rgba(228,180,84,.16), transparent 23rem), radial-gradient(ellipse at 95% 100%, rgba(79,117,209,.16), transparent 25rem), linear-gradient(123deg, #0f1a35 0%, #172e60 62%, #203f81 100%); box-shadow: var(--shadow-deep); }
 .price-box::after { content: ""; position: absolute; top: -120px; right: -76px; width: 270px; height: 270px; border: 1px solid rgba(255,255,255,.09); border-radius: 50%; box-shadow: 0 0 0 28px rgba(255,255,255,.017), 0 0 0 57px rgba(255,255,255,.012); pointer-events: none; }
 .price-box > * { position: relative; z-index: 1; }
 .price-label { margin-bottom: 12px; color: #f0cc7d; font-size: 9px; font-weight: 850; letter-spacing: .17em; text-transform: uppercase; }
@@ -704,26 +469,8 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
 .tick { display: grid; place-items: center; flex: 0 0 20px; width: 20px; height: 20px; margin-top: 1px; color: #80dfbf; border-radius: 50%; background: rgba(82,205,164,.14); font-size: 10px; font-weight: 900; }
 .price-list li.star-item .tick { color: #f5d78e; background: rgba(228,180,84,.19); }
 
-.trust-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 18px;
-}
-.trust-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 7px 12px;
-  border: 1px solid #dbe3f0;
-  border-radius: 999px;
-  background: rgba(255,255,255,.9);
-  color: #54638a;
-  font-size: 10px;
-  font-weight: 750;
-  letter-spacing: .01em;
-  box-shadow: 0 2px 5px rgba(17,32,65,.03);
-}
+.trust-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.trust-chip { display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px; border: 1px solid #dbe3f0; border-radius: 999px; background: rgba(255,255,255,.9); color: #54638a; font-size: 10px; font-weight: 750; letter-spacing: .01em; box-shadow: 0 2px 5px rgba(17,32,65,.03); }
 .trust-chip::before { content: "✓"; color: #087b61; font-weight: 900; font-size: 11px; }
 
 .consent-card { display: flex; align-items: flex-start; gap: 15px; margin-top: 19px; padding: 21px 23px; border: 1px solid #dfe6f2; border-radius: 16px; background: rgba(255,255,255,.9); box-shadow: var(--shadow-soft); }
@@ -744,20 +491,7 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
 .why-item p { margin: 0; color: #69768c; font-size: 11.5px; line-height: 1.8; }
 
 /* Contact CTA */
-.cta {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  padding: 44px;
-  color: #fff;
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: 24px;
-  background:
-    radial-gradient(ellipse at 100% 0%, rgba(77,115,207,.3), transparent 29rem),
-    radial-gradient(ellipse at 0% 100%, rgba(228,180,84,.12), transparent 25rem),
-    linear-gradient(122deg, #0e1933, #1b3675);
-  box-shadow: var(--shadow-deep);
-}
+.cta { position: relative; isolation: isolate; overflow: hidden; padding: 44px; color: #fff; border: 1px solid rgba(255,255,255,.1); border-radius: 24px; background: radial-gradient(ellipse at 100% 0%, rgba(77,115,207,.3), transparent 29rem), radial-gradient(ellipse at 0% 100%, rgba(228,180,84,.12), transparent 25rem), linear-gradient(122deg, #0e1933, #1b3675); box-shadow: var(--shadow-deep); }
 .cta::after { content: ""; position: absolute; z-index: -1; top: -160px; right: -80px; width: 350px; height: 350px; border: 1px solid rgba(255,255,255,.08); border-radius: 50%; box-shadow: 0 0 0 30px rgba(255,255,255,.018), 0 0 0 60px rgba(255,255,255,.012); }
 .cta .eyebrow { color: #f0cc7d !important; }
 .cta h2 { color: #fff; }
@@ -989,7 +723,6 @@ footer strong { color: #fff; font-weight: 800; }
   </div>
 </header>
 
-
 <!-- ================= HERO ================= -->
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap hero-layout">
@@ -998,16 +731,16 @@ footer strong { color: #fff; font-weight: 800; }
       <h1 id="hero-title">Making <span class="inst">Your Institute</span> Students <span class="hl">100% Job-Ready</span></h1>
       <p class="lead">
         A fully white-labelled placement enablement programme — led by <strong>Interview Champ</strong>,
-        the free unlimited audio mock-interview coach every student wants, plus live lectures, verified placement alerts,
+        the free unlimited HR &amp; Technical audio mock-interview coach (500+ Q&amp;As), plus live lectures, verified placement alerts,
         internship projects with experience letters, and a student portal carrying <strong>your brand</strong>.
         Zero extra workload for your staff.
       </p>
       <div class="hero-meta">
         <span class="chip chip-star"><span aria-hidden="true">✦</span> Interview Champ — Free</span>
-        <span class="chip">20+ Years Experience</span>
+        <span class="chip">500+ HR &amp; Tech Q&amp;As</span>
         <span class="chip">100% White-Labelled</span>
-        <span class="chip">1 Live Lecture / Week</span>
-        <span class="chip">Fast Forward to HR</span>
+        <span class="chip">9 Aptitude Tests</span>
+        <span class="chip">Market Trends Insights</span>
         <span class="chip">₹9,500 per month</span>
       </div>
       <div class="hero-actions">
@@ -1025,7 +758,7 @@ footer strong { color: #fff; font-weight: 800; }
       <p class="hero-panel-copy">A practical, branded career-readiness layer designed to work alongside your existing courses.</p>
       <div class="hero-panel-stats">
         <div><strong>09</strong><span>Career modules</span></div>
-        <div><strong>24/7</strong><span>Interview practice</span></div>
+        <div><strong>500+</strong><span>Tech &amp; HR Questions</span></div>
         <div><strong>₹0</strong><span>For Interview Champ</span></div>
       </div>
       <div class="hero-panel-price">
@@ -1059,7 +792,7 @@ footer strong { color: #fff; font-weight: 800; }
       </div>
       <div class="stat-row">
         <div class="stat"><b>20+</b><span>Years Experience</span></div>
-        <div class="stat"><b>80+</b><span>HR Q&As</span></div>
+        <div class="stat"><b>500+</b><span>Tech &amp; HR Q&amp;As</span></div>
         <div class="stat"><b>Free</b><span>Interview Champ</span></div>
       </div>
     </div>
@@ -1091,9 +824,9 @@ footer strong { color: #fff; font-weight: 800; }
             </div>
             <div>
               <span class="eyebrow-small">New · Free for Every Student</span>
-              <h3>Interview Champ — Unlimited Audio Mock Interviews</h3>
+              <h3>Interview Champ — Unlimited HR &amp; Technical Audio Mock Interviews</h3>
               <p>
-                The feature students ask for most. A self-serve practice coach every student can use anytime — they listen to the question read aloud, speak their answer, and instantly reveal and hear the ideal professional answer. No faculty time required, no per-student cost.
+                The feature students ask for most. A self-serve practice coach with <strong>500+ Technical &amp; HR questions</strong>. Students listen to the question read aloud, speak their answer, and instantly reveal and hear the ideal professional answer. Covers AI/ML, Cloud, Software Engineering, Cybersecurity, UI/UX and more. No faculty time required, no per-student cost.
               </p>
             </div>
           </div>
@@ -1107,10 +840,10 @@ footer strong { color: #fff; font-weight: 800; }
             </div>
             <div class="preview-content">
               <div class="preview-label">
-                <span>Question 01 / 80</span>
-                <span style="color:#b28a3c;">HR Round</span>
+                <span>Question 01 / 500+</span>
+                <span style="color:#b28a3c;">Technical Round</span>
               </div>
-              <div class="preview-q">Tell me about yourself.</div>
+              <div class="preview-q">What is the difference between SQL and NoSQL databases?</div>
               <div class="preview-answer">
                 <span class="preview-mic" aria-hidden="true">🔊</span>
                 <div style="flex:1; font-size:11px; color:#4a5568;">Listen to question...</div>
@@ -1124,12 +857,12 @@ footer strong { color: #fff; font-weight: 800; }
         </div>
 
         <ul class="featured-bullets">
-          <li>Includes 80 highly-detailed HR questions and answers</li>
+          <li><strong>500+ Questions:</strong> Includes HR and Technical Q&amp;As across 6 domains.</li>
           <li>Reads questions aloud in an Indian-English voice</li>
           <li>Students practice speaking before revealing the answer</li>
           <li>Reads the ideal answer aloud for perfect pronunciation</li>
           <li>Works in all modern browsers — no app, no signup required</li>
-          <li>Zero setup cost and no external AI API keys needed</li>
+          <li><strong>Zero AI APIs:</strong> Runs completely on browser TTS, saving cost</li>
         </ul>
         <span class="featured-tag">✓ Free for Every Student</span>
       </div>
@@ -1183,9 +916,9 @@ footer strong { color: #fff; font-weight: 800; }
           <h3>Student Portal — Your Branding</h3>
         </div>
         <ul>
-          <li>Split-screen CV / resume builder</li>
-          <li>9 built-in Aptitude Tests</li>
-          <li>Self-introduction maker</li>
+          <li><strong>Dynamic ATS Resume Builder</strong> (DOC/PDF)</li>
+          <li><strong>9 built-in Aptitude Tests</strong> with scoring</li>
+          <li><strong>Market Trends &amp; Hiring Insights</strong></li>
           <li>Learning Hub with YouTube videos</li>
         </ul>
         <span class="tag">Your Name &amp; Logo</span>
@@ -1220,9 +953,9 @@ footer strong { color: #fff; font-weight: 800; }
           <h3>Admin Control Center</h3>
         </div>
         <ul>
-          <li><strong>Placement Engagement Gauge:</strong> Track how involved each student is daily (0-100 score)</li>
+          <li><strong>Holistic Placement Engagement Gauge:</strong> Dynamic 0-100 score based on student activity</li>
+          <li>Track Aptitude Scores &amp; Technical Practice</li>
           <li>Bulk upload jobs and students</li>
-          <li>Delete jobs and manage applications</li>
           <li>View Global Activity Tracker</li>
         </ul>
         <span class="tag">Data-Driven</span>
@@ -1308,12 +1041,12 @@ footer strong { color: #fff; font-weight: 800; }
         <p class="price-note">All nine modules listed above are included in this single price.</p>
       </div>
       <ul class="price-list">
-        <li class="star-item"><span class="tick">✓</span> <strong>Interview Champ</strong> — free unlimited audio mock interviews for every student</li>
+        <li class="star-item"><span class="tick">✓</span> <strong>Interview Champ</strong> — unlimited audio mock interviews (500+ Tech &amp; HR Q&amp;As) for every student</li>
         <li><span class="tick">✓</span> Weekly live lecture — 1 hour × 4 per month</li>
         <li><span class="tick">✓</span> Verified placement alerts to your WhatsApp group (twice a week)</li>
         <li><span class="tick">✓</span> Student portal with your institute branding</li>
         <li><span class="tick">✓</span> Live internship project + Experience Letter + Certificate</li>
-        <li><span class="tick">✓</span> Admin Control Center with Placement Engagement Gauge</li>
+        <li><span class="tick">✓</span> Admin Control Center with Holistic Engagement Gauge</li>
         <li><span class="tick">✓</span> Automated CSV reports for activity and engagement</li>
         <li><span class="tick">✓</span> GitHub &amp; LinkedIn profile optimization for students</li>
         <li><span class="tick">✓</span> Fast Forward to HR — automated student brochure shared directly with company HRs</li>
@@ -1360,7 +1093,7 @@ footer strong { color: #fff; font-weight: 800; }
           <svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
         </div>
         <h4>24/7 Student Practice</h4>
-        <p>Interview Champ gives every student unlimited audio mock interviews — free, self-serve, at zero extra cost.</p>
+        <p>Interview Champ gives every student unlimited audio mock interviews (HR &amp; Technical) — free, self-serve, at zero extra cost.</p>
       </div>
       <div class="why-item reveal">
         <div class="ico" aria-hidden="true">
@@ -1539,12 +1272,12 @@ footer strong { color: #fff; font-weight: 800; }
 "\n" +
 "*Proposal for " + name + ":*\n" +
 "\n" +
-"⭐ *1. Interview Champ — Free Unlimited Audio Mock Interviews* (Most Wanted by Students)\n" +
+"⭐ *1. Interview Champ — Free Unlimited HR & Technical Audio Mock Interviews* (Most Wanted by Students)\n" +
 "- Self-serve practice coach for every student, 24/7.\n" +
-"- Reads HR questions aloud in an Indian-English voice.\n" +
+"- Includes *500+ Technical & HR questions* across 6 domains (AI/ML, Cloud, Software, Cybersecurity, UI/UX, Cross-Cutting).\n" +
+"- Reads questions aloud in an Indian-English voice (No AI API cost).\n" +
 "- Students practice speaking their answers.\n" +
 "- Reveal and listen to the ideal professional answer.\n" +
-"- Includes 80 detailed HR Q&As.\n" +
 "- Works in all modern browsers — no app, no signup, no cost.\n" +
 "- Student data stays on their device — zero privacy risk.\n" +
 "\n" +
@@ -1561,9 +1294,9 @@ footer strong { color: #fff; font-weight: 800; }
 "- No middlemen. No referral fees.\n" +
 "\n" +
 "*4. Student Portal with Your Institute Name*\n" +
-"- Split-screen CV/resume builder.\n" +
-"- 9 built-in Aptitude tests.\n" +
-"- Self-introduction maker.\n" +
+"- Dynamic ATS Resume Builder (DOC/PDF download).\n" +
+"- 9 built-in Aptitude Tests with scoring.\n" +
+"- Market Trends & Hiring Insights (Monthly updates).\n" +
 "- Learning Hub with curated YouTube videos.\n" +
 "\n" +
 "*5. Internship Project with Experience Letter & Certificate*\n" +
@@ -1574,9 +1307,9 @@ footer strong { color: #fff; font-weight: 800; }
 "- Certificate issued by a registered firm.\n" +
 "\n" +
 "*6. Admin Control Center*\n" +
-"- Placement Engagement Gauge to track student involvement (0-100 score).\n" +
+"- Holistic Placement Engagement Gauge: Dynamic 0-100 score based on student activity.\n" +
+"- Track Aptitude Scores & Technical Practice history.\n" +
 "- Bulk upload jobs and students.\n" +
-"- Delete jobs and manage applications.\n" +
 "- View Global Activity Tracker.\n" +
 "\n" +
 "*7. Automated CSV Reports*\n" +
@@ -1601,7 +1334,7 @@ footer strong { color: #fff; font-weight: 800; }
 "\n" +
 "*Commercial*\n" +
 "₹" + price + " per month.\n" +
-"All nine services above are included — including Interview Champ for every student at no extra cost.\n" +
+"All nine services above are included — including Interview Champ (500+ Q&As) for every student at no extra cost.\n" +
 "No hidden charges.\n" +
 "\n" +
 "*Data & Consent*\n" +
