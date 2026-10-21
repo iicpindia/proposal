@@ -5,14 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#14213d" />
 <meta name="color-scheme" content="light" />
-<meta name="description" content="A white-labelled placement enablement partnership proposal from IICP, including Interview Champ, live lectures, placement alerts, internship projects and a branded student portal." />
-<meta property="og:title" content="IICP Partnership Proposal — Career Readiness for Your Institute" />
-<meta property="og:description" content="Nine integrated career-readiness modules under one white-labelled partnership." />
+<meta name="description" content="A white-labelled placement enablement partnership proposal from IICP, including the Audio Interview Champ, live lectures, placement alerts, internship projects and a branded student portal." />
 <title>Partnership Proposal — IICP × Computer Institute</title>
 <style>
 /* =====================================================================
-   IICP PARTNERSHIP PROPOSAL — PREMIUM DESIGN SYSTEM v2
-   Self-contained, responsive, dependency-free and print-friendly.
+   IICP PARTNERSHIP PROPOSAL — PREMIUM DESIGN SYSTEM
    ===================================================================== */
 :root {
   color-scheme: light;
@@ -84,9 +81,6 @@ svg { display: block; }
 @keyframes waveBar {
   0%, 100% { transform: scaleY(.35); }
   50% { transform: scaleY(1); }
-}
-@keyframes ringDraw {
-  from { stroke-dasharray: 0 100; }
 }
 
 /* Navigation */
@@ -182,7 +176,7 @@ svg { display: block; }
 .btn-gold { color: #172440; border-color: #f1d797; background: linear-gradient(135deg, #f6dfa7, #d9b360); box-shadow: 0 10px 25px rgba(5, 12, 29, .18); }
 .btn-gold:hover { box-shadow: 0 14px 29px rgba(5, 12, 29, .23); }
 
-/* Hero / executive summary */
+/* Hero */
 .hero {
   position: relative;
   isolation: isolate;
@@ -204,39 +198,6 @@ svg { display: block; }
   background-size: 52px 52px;
   mask-image: radial-gradient(ellipse at 79% 40%, #000, transparent 72%);
   pointer-events: none;
-}
-/* Floating orbs */
-.hero-orb {
-  position: absolute;
-  z-index: -1;
-  border-radius: 50%;
-  pointer-events: none;
-  filter: blur(2px);
-  animation: floatY 9s ease-in-out infinite;
-}
-.hero-orb.o1 {
-  top: 12%;
-  left: 6%;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle at 30% 30%, rgba(240, 204, 125, .35), rgba(240, 204, 125, 0) 70%);
-  animation-delay: -2s;
-}
-.hero-orb.o2 {
-  bottom: 15%;
-  right: 8%;
-  width: 160px;
-  height: 160px;
-  background: radial-gradient(circle at 40% 40%, rgba(100, 140, 240, .28), rgba(100, 140, 240, 0) 70%);
-  animation-delay: -4s;
-}
-.hero-orb.o3 {
-  top: 55%;
-  right: 40%;
-  width: 70px;
-  height: 70px;
-  background: radial-gradient(circle at 30% 30%, rgba(240, 204, 125, .22), rgba(240, 204, 125, 0) 70%);
-  animation-delay: -6s;
 }
 .hero-bottom-line {
   position: absolute;
@@ -318,7 +279,7 @@ section { padding: 72px 0; }
 h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 850; line-height: 1.15; letter-spacing: -.048em; }
 .sub { max-width: 760px; margin: 12px 0 0; color: var(--ink-soft); font-size: 14px; line-height: 1.8; }
 
-/* Intro / proof points */
+/* Intro */
 .intro {
   position: relative;
   display: grid;
@@ -343,7 +304,7 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
 .stat span { display: block; margin-top: 6px; color: #758198; font-size: 9px; font-weight: 800; letter-spacing: .055em; line-height: 1.55; text-transform: uppercase; }
 
 /* ==============================================
-   FEATURED INTERVIEW CHAMP CARD — with preview
+   FEATURED INTERVIEW CHAMP CARD
    ============================================== */
 .card-featured {
   position: relative;
@@ -468,14 +429,6 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
   font-size: 9px;
   font-weight: 700;
   letter-spacing: .02em;
-}
-.preview-tab::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #45d3a0;
-  box-shadow: 0 0 0 3px rgba(69,211,160,.18);
 }
 .preview-live {
   display: inline-flex;
@@ -651,9 +604,7 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
 .featured-bullets li::before { content: "✓"; position: absolute; top: 0; left: 1px; color: #9b762c; font-size: 13px; font-weight: 900; }
 .featured-tag { display: inline-flex; align-items: center; align-self: flex-start; gap: 6px; margin-top: 1px; padding: 7px 12px; color: #176f5c; border: 1px solid #d9eee7; border-radius: 999px; background: #eef8f4; font-size: 9px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 
-/* ==============================================
-   SERVICE CARDS — with gradient border & shine sweep
-   ============================================== */
+/* Service Cards */
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 17px; }
 .card {
   position: relative;
@@ -677,17 +628,6 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
   transition: opacity .22s ease;
   z-index: 2;
 }
-.card::after {
-  content: "";
-  position: absolute;
-  top: -60%; left: -80%;
-  width: 60%; height: 200%;
-  background: linear-gradient(100deg, transparent 40%, rgba(255,255,255,.55) 50%, transparent 60%);
-  transform: rotate(18deg);
-  pointer-events: none;
-  transition: left .8s ease;
-  z-index: 1;
-}
 .card:hover {
   transform: translateY(-5px);
   border-color: #cdd9ec;
@@ -696,7 +636,6 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
     0 30px 60px -20px rgba(19,37,77,.1);
 }
 .card:hover::before { opacity: 1; }
-.card:hover::after { left: 120%; }
 .card-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; padding-right: 20px; position: relative; z-index: 2; }
 .card-icon {
   display: grid;
@@ -837,7 +776,7 @@ h2 { margin: 0; color: #172541; font-size: clamp(27px, 3vw, 37px); font-weight: 
 .cta-actions .btn-ghost { color: #1b2d50; border-color: #fff; background: #fff; }
 .cta-actions .btn-ghost:hover { background: #f2f5fb; }
 
-/* Footer and utility feedback */
+/* Footer */
 footer { margin-top: 6px; padding: 25px 0; color: #aab7d1; border-top: 1px solid rgba(255,255,255,.08); background: #0b1530; font-size: 10px; }
 .foot-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; line-height: 1.9; }
 footer strong { color: #fff; font-weight: 800; }
@@ -847,7 +786,7 @@ footer strong { color: #fff; font-weight: 800; }
 .js .reveal { opacity: 0; transform: translateY(12px); }
 .js .reveal.in { opacity: 1; transform: none; }
 
-/* Responsive layouts */
+/* Responsive */
 @media (max-width: 1040px) {
   .wrap { width: min(100% - 40px, var(--page-width)); }
   .topbar-inner { gap: 14px; }
@@ -964,22 +903,12 @@ footer strong { color: #fff; font-weight: 800; }
   .price-list li { font-size: 10.5px; }
   .cta-actions .btn { width: 100%; }
 }
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    animation-duration: .01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: .01ms !important;
-  }
-  .reveal { opacity: 1 !important; transform: none !important; }
-  .hero-orb, .hero-bottom-line, .dot, .preview-wave span, .preview-live::before { animation: none !important; }
-}
 
-/* Printed / PDF proposal */
+/* Printed */
 @page { size: A4; margin: 11mm; }
 @media print {
   html, body { color: #15213a !important; background: #fff !important; font-size: 9.5pt; }
-  .topbar, .hero-actions, .cta-actions, .toast, .btn, .inst-field, .hero-orb { display: none !important; }
+  .topbar, .hero-actions, .cta-actions, .toast, .btn, .inst-field { display: none !important; }
   .wrap { width: 100%; max-width: none; }
   .hero { padding: 24px 0; background: #14213d !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .hero-layout { grid-template-columns: 1.2fr .8fr; gap: 20px; }
@@ -1009,11 +938,8 @@ footer strong { color: #fff; font-weight: 800; }
   .featured-bullets { padding: 9px 12px; grid-template-columns: repeat(2, minmax(0,1fr)); }
   .featured-badge { position: static; margin-bottom: 10px; }
   .preview-frame { border: 1px solid #ccd5e6; }
-  .preview-wave span { animation: none !important; transform: scaleY(.6); }
-  .preview-live::before { animation: none !important; }
   .grid { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; }
   .card { padding: 11px; }
-  .card::after { display: none; }
   .card h3 { font-size: 9pt; }
   .card li { font-size: 7.5pt; }
   .tag { font-size: 6pt; }
@@ -1066,16 +992,13 @@ footer strong { color: #fff; font-weight: 800; }
 
 <!-- ================= HERO ================= -->
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero-orb o1" aria-hidden="true"></div>
-  <div class="hero-orb o2" aria-hidden="true"></div>
-  <div class="hero-orb o3" aria-hidden="true"></div>
   <div class="wrap hero-layout">
     <div class="hero-copy">
       <span class="pill"><span class="dot" aria-hidden="true"></span> Partnership Proposal</span>
       <h1 id="hero-title">Making <span class="inst">Your Institute</span> Students <span class="hl">100% Job-Ready</span></h1>
       <p class="lead">
         A fully white-labelled placement enablement programme — led by <strong>Interview Champ</strong>,
-        the free unlimited mock-interview coach every student wants, plus live lectures, verified placement alerts,
+        the free unlimited audio mock-interview coach every student wants, plus live lectures, verified placement alerts,
         internship projects with experience letters, and a student portal carrying <strong>your brand</strong>.
         Zero extra workload for your staff.
       </p>
@@ -1136,7 +1059,7 @@ footer strong { color: #fff; font-weight: 800; }
       </div>
       <div class="stat-row">
         <div class="stat"><b>20+</b><span>Years Experience</span></div>
-        <div class="stat"><b>500+</b><span>Interview Qs</span></div>
+        <div class="stat"><b>80+</b><span>HR Q&As</span></div>
         <div class="stat"><b>Free</b><span>Interview Champ</span></div>
       </div>
     </div>
@@ -1168,11 +1091,9 @@ footer strong { color: #fff; font-weight: 800; }
             </div>
             <div>
               <span class="eyebrow-small">New · Free for Every Student</span>
-              <h3>Interview Champ — Unlimited Mock Interviews, 24/7</h3>
+              <h3>Interview Champ — Unlimited Audio Mock Interviews</h3>
               <p>
-                The feature students ask for most. A self-serve practice coach every student can use anytime —
-                speak answers out loud, get instant scoring, and receive specific <strong>STAR-based feedback</strong>.
-                No faculty time required, no per-student cost.
+                The feature students ask for most. A self-serve practice coach every student can use anytime — they listen to the question read aloud, speak their answer, and instantly reveal and hear the ideal professional answer. No faculty time required, no per-student cost.
               </p>
             </div>
           </div>
@@ -1186,55 +1107,29 @@ footer strong { color: #fff; font-weight: 800; }
             </div>
             <div class="preview-content">
               <div class="preview-label">
-                <span>Question 01 / 05</span>
-                <span style="color:#b28a3c;">Java Developer</span>
+                <span>Question 01 / 80</span>
+                <span style="color:#b28a3c;">HR Round</span>
               </div>
               <div class="preview-q">Tell me about yourself.</div>
               <div class="preview-answer">
-                <span class="preview-mic" aria-hidden="true">🎤</span>
-                <div class="preview-wave" aria-hidden="true">
-                  <span></span><span></span><span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span><span></span><span></span>
-                </div>
-                <span class="preview-time">00:23</span>
+                <span class="preview-mic" aria-hidden="true">🔊</span>
+                <div style="flex:1; font-size:11px; color:#4a5568;">Listen to question...</div>
               </div>
-              <div class="preview-score">
-                <div class="preview-ring">
-                  <svg viewBox="0 0 36 36" aria-hidden="true">
-                    <circle class="bg" cx="18" cy="18" r="15.9"/>
-                    <circle class="fg" cx="18" cy="18" r="15.9"/>
-                  </svg>
-                  <span>82</span>
-                </div>
-                <div class="preview-dims">
-                  <div class="preview-dim">
-                    <span>Relevance</span>
-                    <span class="bar"><i style="width:92%"></i></span>
-                    <b>92</b>
-                  </div>
-                  <div class="preview-dim">
-                    <span>Structure</span>
-                    <span class="bar"><i style="width:78%"></i></span>
-                    <b>78</b>
-                  </div>
-                  <div class="preview-dim">
-                    <span>Clarity</span>
-                    <span class="bar"><i style="width:85%"></i></span>
-                    <b>85</b>
-                  </div>
-                </div>
+              <div class="preview-score" style="background:#ecfdf5; color:#064e3b; border:1px solid #a7f3d0;">
+                <div style="flex:1; font-size:11px; font-weight:700;">✓ Ideal Answer Ready</div>
+                <div class="preview-ring" style="flex:0 0 20px; width:20px; height:20px; background:#10b981; border-radius:50%; text-align:center; line-height:20px; color:white; font-size:10px;">💡</div>
               </div>
             </div>
           </div>
         </div>
 
         <ul class="featured-bullets">
-          <li>Speak or type answers to role-specific interview questions</li>
-          <li>Instant score on Relevance, Structure, Clarity &amp; Confidence</li>
-          <li>Specific feedback on STAR, filler words &amp; hedging language</li>
-          <li>Session summary with stars + downloadable progress report</li>
-          <li>Works in Chrome / Edge — no app, no signup, no login</li>
-          <li>Student data stays on their device — zero privacy risk</li>
+          <li>Includes 80 highly-detailed HR questions and answers</li>
+          <li>Reads questions aloud in an Indian-English voice</li>
+          <li>Students practice speaking before revealing the answer</li>
+          <li>Reads the ideal answer aloud for perfect pronunciation</li>
+          <li>Works in all modern browsers — no app, no signup required</li>
+          <li>Zero setup cost and no external AI API keys needed</li>
         </ul>
         <span class="featured-tag">✓ Free for Every Student</span>
       </div>
@@ -1288,10 +1183,10 @@ footer strong { color: #fff; font-weight: 800; }
           <h3>Student Portal — Your Branding</h3>
         </div>
         <ul>
-          <li>CV / resume builder</li>
-          <li>Aptitude test app</li>
+          <li>Split-screen CV / resume builder</li>
+          <li>9 built-in Aptitude Tests</li>
           <li>Self-introduction maker</li>
-          <li>500+ HR and technical interview questions</li>
+          <li>Learning Hub with YouTube videos</li>
         </ul>
         <span class="tag">Your Name &amp; Logo</span>
       </article>
@@ -1320,16 +1215,17 @@ footer strong { color: #fff; font-weight: 800; }
         <span class="card-index">06</span>
         <div class="card-top">
           <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
           </div>
-          <h3>Weekly Newsletter — Your Branding</h3>
+          <h3>Admin Control Center</h3>
         </div>
         <ul>
-          <li>PDF with your logo and contact details</li>
-          <li>Interview tips, student spotlight</li>
-          <li>Ready to forward to students and parents</li>
+          <li><strong>Placement Engagement Gauge:</strong> Track how involved each student is daily (0-100 score)</li>
+          <li>Bulk upload jobs and students</li>
+          <li>Delete jobs and manage applications</li>
+          <li>View Global Activity Tracker</li>
         </ul>
-        <span class="tag">Zero Effort</span>
+        <span class="tag">Data-Driven</span>
       </article>
 
       <!-- 07 -->
@@ -1337,16 +1233,16 @@ footer strong { color: #fff; font-weight: 800; }
         <span class="card-index">07</span>
         <div class="card-top">
           <div class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           </div>
-          <h3>Student Attendance Report</h3>
+          <h3>Automated CSV Reports</h3>
         </div>
         <ul>
-          <li>Simple report of student attendance</li>
-          <li>Shows who attended and who did not attend</li>
-          <li>Easy to download</li>
+          <li>Download global activity reports</li>
+          <li>Export job application logs</li>
+          <li>Track student engagement data in one click</li>
         </ul>
-        <span class="tag">Simple &amp; Clear</span>
+        <span class="tag">One-Click Export</span>
       </article>
 
       <!-- 08 -->
@@ -1356,7 +1252,7 @@ footer strong { color: #fff; font-weight: 800; }
           <div class="card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3>GitHub &amp; LinkedIn Profile Optimization</h3>
+          <h3>GitHub &amp; LinkedIn Optimization</h3>
         </div>
         <ul>
           <li>Step-by-step GitHub and LinkedIn profile setup</li>
@@ -1412,13 +1308,13 @@ footer strong { color: #fff; font-weight: 800; }
         <p class="price-note">All nine modules listed above are included in this single price.</p>
       </div>
       <ul class="price-list">
-        <li class="star-item"><span class="tick">✓</span> <strong>Interview Champ</strong> — free unlimited AI mock interviews for every student</li>
+        <li class="star-item"><span class="tick">✓</span> <strong>Interview Champ</strong> — free unlimited audio mock interviews for every student</li>
         <li><span class="tick">✓</span> Weekly live lecture — 1 hour × 4 per month</li>
         <li><span class="tick">✓</span> Verified placement alerts to your WhatsApp group (twice a week)</li>
         <li><span class="tick">✓</span> Student portal with your institute branding</li>
         <li><span class="tick">✓</span> Live internship project + Experience Letter + Certificate</li>
-        <li><span class="tick">✓</span> Weekly white-labelled newsletter PDF</li>
-        <li><span class="tick">✓</span> Student attendance report</li>
+        <li><span class="tick">✓</span> Admin Control Center with Placement Engagement Gauge</li>
+        <li><span class="tick">✓</span> Automated CSV reports for activity and engagement</li>
         <li><span class="tick">✓</span> GitHub &amp; LinkedIn profile optimization for students</li>
         <li><span class="tick">✓</span> Fast Forward to HR — automated student brochure shared directly with company HRs</li>
         <li><span class="tick">✓</span> No hidden charges</li>
@@ -1464,7 +1360,7 @@ footer strong { color: #fff; font-weight: 800; }
           <svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="17" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
         </div>
         <h4>24/7 Student Practice</h4>
-        <p>Interview Champ gives every student unlimited mock interviews — free, self-serve, at zero extra cost.</p>
+        <p>Interview Champ gives every student unlimited audio mock interviews — free, self-serve, at zero extra cost.</p>
       </div>
       <div class="why-item reveal">
         <div class="ico" aria-hidden="true">
@@ -1478,7 +1374,7 @@ footer strong { color: #fff; font-weight: 800; }
           <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
         </div>
         <h4>Your Brand Everywhere</h4>
-        <p>Portal, newsletter and certificates carry your institute's name and logo.</p>
+        <p>Portal and certificates carry your institute's name and logo.</p>
       </div>
       <div class="why-item reveal">
         <div class="ico" aria-hidden="true">
@@ -1574,9 +1470,6 @@ footer strong { color: #fff; font-weight: 800; }
 
 <div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard</div>
 
-
-
-
 <script>
 (function () {
   "use strict";
@@ -1646,12 +1539,13 @@ footer strong { color: #fff; font-weight: 800; }
 "\n" +
 "*Proposal for " + name + ":*\n" +
 "\n" +
-"⭐ *1. Interview Champ — Free Unlimited AI Mock Interviews* (Most Wanted by Students)\n" +
+"⭐ *1. Interview Champ — Free Unlimited Audio Mock Interviews* (Most Wanted by Students)\n" +
 "- Self-serve practice coach for every student, 24/7.\n" +
-"- Students speak their answers — instant scoring on Relevance, Structure, Clarity, Confidence.\n" +
-"- Specific feedback on STAR, filler words, and hedging.\n" +
-"- Session summary + downloadable progress report.\n" +
-"- Works in Chrome/Edge — no app, no signup, no cost.\n" +
+"- Reads HR questions aloud in an Indian-English voice.\n" +
+"- Students practice speaking their answers.\n" +
+"- Reveal and listen to the ideal professional answer.\n" +
+"- Includes 80 detailed HR Q&As.\n" +
+"- Works in all modern browsers — no app, no signup, no cost.\n" +
 "- Student data stays on their device — zero privacy risk.\n" +
 "\n" +
 "*2. Weekly Live Lecture*\n" +
@@ -1667,10 +1561,10 @@ footer strong { color: #fff; font-weight: 800; }
 "- No middlemen. No referral fees.\n" +
 "\n" +
 "*4. Student Portal with Your Institute Name*\n" +
-"- CV/resume builder.\n" +
-"- Aptitude test app.\n" +
+"- Split-screen CV/resume builder.\n" +
+"- 9 built-in Aptitude tests.\n" +
 "- Self-introduction maker.\n" +
-"- 500+ HR and technical interview questions.\n" +
+"- Learning Hub with curated YouTube videos.\n" +
 "\n" +
 "*5. Internship Project with Experience Letter & Certificate*\n" +
 "- Students work on real live projects with our company.\n" +
@@ -1679,15 +1573,16 @@ footer strong { color: #fff; font-weight: 800; }
 "- Completion Certificate with QR code verification.\n" +
 "- Certificate issued by a registered firm.\n" +
 "\n" +
-"*6. Weekly Newsletter with Your Institute Name*\n" +
-"- PDF with your logo and contact details.\n" +
-"- Placement alerts, interview tips, student spotlight.\n" +
-"- Ready to forward to students and parents.\n" +
+"*6. Admin Control Center*\n" +
+"- Placement Engagement Gauge to track student involvement (0-100 score).\n" +
+"- Bulk upload jobs and students.\n" +
+"- Delete jobs and manage applications.\n" +
+"- View Global Activity Tracker.\n" +
 "\n" +
-"*7. Student Attendance Report*\n" +
-"- Simple report of student attendance.\n" +
-"- Shows who attended and who did not attend.\n" +
-"- Easy to download.\n" +
+"*7. Automated CSV Reports*\n" +
+"- Download global activity reports.\n" +
+"- Export job application logs.\n" +
+"- Track student engagement data in one click.\n" +
 "\n" +
 "*8. GitHub & LinkedIn Profile Optimization*\n" +
 "- Step-by-step GitHub and LinkedIn profile setup.\n" +
